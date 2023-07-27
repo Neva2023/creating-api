@@ -44,7 +44,7 @@ app.get('/api/greet/:username', function(req, res){
 
 
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, function() {
     console.log(`app started on port ${PORT}`);
