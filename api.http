@@ -8,5 +8,10 @@ content-type: application/json
 
 ### 
 
-GET http://localhost:3019/api/greet?name=Andrey&language=Pedi
+GET https://creating-api.onrender.com/api/greet?name=Andrey&language=xhosa
 content-type: application/json
+
+{
+    "language" : "xhosa",
+    "greeting" : "Molo"
+}
