@@ -1,4 +1,8 @@
 import express from 'express'
+import longestWord from './bootcamp/longestWord.js';
+import shortestWord from './bootcamp/shortestWord.js';
+import wordLengths from './bootcamp/wordLengths.js';
+import totalPhoneBill from './bootcamp/totalPhoneBill.js';
 
 const app = express();
 app.use(express.json());
@@ -6,6 +10,8 @@ app.use(express.static('public'))
 
 const greetings = {
     'english' : 'hello',
+    'xhosa'   : 'Molo',
+    'zulu'    : 'Sawubona'
 }
 
 app.get('/api/greet', function(req, res) {
@@ -26,7 +32,7 @@ app.get('/api/greet', function(req, res) {
 
 app.post('/api/greet', function(req, res) {
     const language = req.body.language;
-    greetings(language) = req.body.greeting
+    greetings[language] = req.body.greeting
     res.json({
         status : 'success',
         message: `added a greeting for ${language}` 
@@ -34,12 +40,48 @@ app.post('/api/greet', function(req, res) {
 
 });
 
-app.get('/api/greet/:username', function(req, res){
+app.get('/api/greet/', function(req, res){
     console.log(req.params);
-    const username = req.params.username;
+    const username = req.query.username;
     res.json({
         message : `Hello, ${username}!`
     })
+});
+
+
+
+app.get('/api/word_game', function(req, res) {
+
+    const sentence = req.query.sentence;
+
+    if (!sentence) {
+        res.json ({
+            error : 'Please send in sentence to analyze'
+        })
+    }
+
+    res.json ({
+        "longestWord" : longestWord (sentence),
+        "shortestWord" : shortestWord(sentence),
+        "sum" : wordLengths(sentence),
+    });
+});
+
+
+app.get('/api/phone_bill', function(req, res) {
+
+    const usage = req.query.usage;
+
+    if (!usage) {
+        res.json ({
+            error : 'Please enter the usage to calculate the phone bill from'
+        })
+    }
+
+    res.json ({
+        "totalCost" : totalPhoneBill(usage),
+        
+    });
 });
 
 

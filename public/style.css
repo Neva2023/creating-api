@@ -1,2 +1,31 @@
+body {
+    background-color: lightblue;
+  }
 
- 
+  .greet {
+    display: inline-block;
+    width: 420px;
+    height: 250px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+  }
+
+  .wordgame {
+    display: inline-block;
+    width: 420px;
+    height: 250px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+  }
+
+  .phonebill {
+    display: inline-block;
+    width: 420px;
+    height: 250px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+  }
+  

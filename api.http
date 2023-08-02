@@ -1,17 +1,26 @@
-POST http://localhost:3019/api/greet
-content-type: application/json
-
-//{
-    //"language" : "xhosa",
-    //"greeting" : "Molo"
-//}
-
-### 
-
-GET https://creating-api.onrender.com/api/greet?name=Andrey&language=xhosa
+POST http://localhost:5000/api/greet
 content-type: application/json
 
 {
-    "language" : "xhosa",
-    "greeting" : "Molo"
+	"language" : "xhosa",
+	"greeting" : "Molo"
 }
+
+###
+
+
+POST http://localhost:5000/api/greet
+content-type: application/json
+
+{
+	"language" : "zulu",
+	"greeting" : "Sawubona"
+}
+
+###
+
+POST http://localhost:5000/api/phone_bill
+content-type: application/json
+
+
+
