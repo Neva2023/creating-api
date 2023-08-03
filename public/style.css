@@ -1,31 +1,51 @@
 body {
-    background-color: lightblue;
+    background-color: C7CCDB;
   }
 
   .greet {
+    background-color: F7C59F;
+    border: 1px solid;
+    margin-bottom: 1em;
+    padding: 1em;
+    width: 22em;
+    border-radius: 0.25em;
     display: inline-block;
-    width: 420px;
-    height: 250px;
-    padding: 5px;
-    border: 1px solid blue;
-    background-color: yellow;
+    padding: 0.5em
+  
   }
 
   .wordgame {
+    background-color:F7C59F;
+    border: 1px solid;
+    margin-bottom: 1em;
+    padding: 1em;
+    width: 35em;
+    border-radius: 0.25em;
     display: inline-block;
-    width: 420px;
-    height: 250px;
-    padding: 5px;
-    border: 1px solid blue;
-    background-color: yellow;
+    padding: 0.5em
+    
   }
+  
+   
+  
 
   .phonebill {
+  
+    border: 1px solid;
+    margin-bottom: 1em;
+    padding: 1em;
+    width: 22em;
+    border-radius: 0.25em;
     display: inline-block;
-    width: 420px;
-    height: 250px;
-    padding: 5px;
-    border: 1px solid blue;
-    background-color: yellow;
-  }
+    padding: 0.5em;
+    background-color: F7C59F;
+}
+
+button {
+  background-color: 2A324B;
+  padding: 2px 4px;
+  text-align: center;
+  border: 2px solid #4CAF50; /* Green */
+  border-radius: 8px;
+}
   
