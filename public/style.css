@@ -1,9 +1,9 @@
 body {
-    background-color: C7CCDB;
+    background-color: rgb(36, 110, 110);
   }
 
   .greet {
-    background-color: F7C59F;
+    background-color: rgb(108, 143, 143);
     border: 1px solid;
     margin-bottom: 1em;
     padding: 1em;
@@ -15,7 +15,7 @@ body {
   }
 
   .wordgame {
-    background-color:F7C59F;
+    background-color:rgb(108, 143, 143);
     border: 1px solid;
     margin-bottom: 1em;
     padding: 1em;
@@ -38,14 +38,20 @@ body {
     border-radius: 0.25em;
     display: inline-block;
     padding: 0.5em;
-    background-color: F7C59F;
+    background-color: rgb(108, 143, 143);
 }
 
 button {
-  background-color: 2A324B;
+  background-color: grey;
   padding: 2px 4px;
   text-align: center;
-  border: 2px solid #4CAF50; /* Green */
+  border-radius: 8px;
+}
+
+.button {
+  background-color: grey;
+  padding: 2px 4px;
+  text-align: center;
   border-radius: 8px;
 }
   
